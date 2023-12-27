@@ -45,13 +45,13 @@ function RegistrationUser() {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
     
     if (!values.username) {
-      errors.username = "Username is required!";
+      errors.username = "Yourname is required!";
     } else if (values.username.length > 20) {
-      errors.username = "Username cannot exceed more than 20 characters";
+      errors.username = "Yourname cannot exceed more than 20 characters";
     }
 
     if (!values.email) {
-      errors.email = "Email is required!";
+      errors.email = "Valid-Email is required!";
     } else if (!regex.test(values.email)) {
       errors.email = "This is not a valid email format!";
     }
@@ -104,10 +104,7 @@ function RegistrationUser() {
             Email
           </label>
           <input
-            type="text"
-            id="email"
-            name="email"
-            className="input" placeholder="Email" value={formValues.email}
+            type="text" id="email" nname="email" className="input" placeholder="Email" value={formValues.email}
             onChange={handlingChanges}
           />
           <p className="error-message" htmlFor="email">
@@ -121,12 +118,7 @@ function RegistrationUser() {
             Password
           </label>
           <input
-            type="password"
-            id="password"
-            name="password"
-            className="input"
-            placeholder="Password"
-            value={formValues.password}
+            type="password" id="password" name="password" className="input" placeholder="Password" value={formValues.password}
             onChange={handlingChanges}
           />
           <p className="error-message" htmlFor="password">
@@ -140,12 +132,7 @@ function RegistrationUser() {
             Confirm Password
           </label>
           <input
-            type="password"
-            id="confirmPassword"
-            name="confirmPassword"
-            className="input"
-            placeholder="Confirm Password"
-            value={formValues.confirmPassword}
+            type="password" id="confirmPassword" name="confirmPassword" className="input" placeholder="Confirm Password" value={formValues.confirmPassword}
             onChange={handlingChanges}
           />
           <p className="error-message" htmlFor="confirmPassword">
@@ -163,5 +150,7 @@ function RegistrationUser() {
     </div>
   );
 }
+
+
 
 export default RegistrationUser;
