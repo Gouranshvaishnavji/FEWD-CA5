@@ -1,68 +1,82 @@
-.container {
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Triangles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Rubik+Doodle+Triangles&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}  
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: linear-gradient(to bottom, #9c8df1, #c47bc7, #d409db);
 }
 
-.form-container {
-  width: 400px;
-  padding: 20px;
+.form-main {
+  width: 75vw;
+  border: 0.1rem solid #34a3ee;
+  padding:4vh 5vw;
   background-color: #f2f2f2;
-  border-radius: 5px;
+  border-radius: 0.4rem;
 }
 
-.form-header {
+.form-top {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
+  font-family:'kalnia' ;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #d409db;
+  text-shadow: 0 0 0.5rem #eba1ee;
 }
 
-.form-group {
-  margin-bottom: 20px;
+.forms {
+  margin:2vh 1vw;
 }
 
-.form-label {
+#forms_Instr {
   display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
+  font-size: 1.3rem;;
+  font-weight: bolder;
 }
 
-.form-input {
-  width: 95%;
-  padding: 10px;
-  border: 1px solid #ccc;
+.input {
+  padding: 1vh 1.4vw;
+  border: 0.1rem solid #ad9bff;
   border-radius: 5px;
 }
 
-.error-message {
-  margin-top: 5px;
-  color: red;
-  font-size: 12px;
-}
 
-.submit-button {
-  width: 100%;
-  padding: 10px;
+.submit {
+  padding: 0.5vh 2vw;
   background-color: #4caf50;
   color: white;
-  border: none;
-  border-radius: 5px;
+  border: 0.1rem solid #066909;
+  border-radius: 0.5rem;
   cursor: pointer;
+  margin:0vh 30%;
 }
 
 .success-message {
   text-align: center;
-  margin-bottom: 20px;
-  color: green;
+  margin-bottom: 3vh;
+  color: rgb(23, 233, 23);
   font-weight: bold;
 }
 
+.error-message {
+  margin: 1.2vh 30%;
+  width: max-content;
+  color: rgb(255, 30, 0);
+  font-size: 1.4vh;
+}
 /* Button hover effect */
-.submit-button:hover {
-    background-color: #e70707;
+.submit:hover {
+    background-color: #527df3;
   }
   
   /* Input box hover effect */
-  .form-input:hover {
-    border-color: #00fe2f;
+  .input:hover {
+    box-shadow: inset 0.2vh 0 0.1rem 0.1rem rgba(216, 207, 207, 0.5);  
   }
