@@ -77,7 +77,7 @@ function Books() {
 
       {/* Display message based on registration status */}
       <div id='Registration-done'>
-        {successMessage ? <p>{successMessage}</p> : <p>Register to get free books</p>}
+        {successMessage ? <p>{successMessage}</p> : <p>Please do register to our site</p>}
       </div>
 
       {/* Footer */}
