@@ -1,18 +1,23 @@
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
-.book-container {
+
+/* Styling for the main container of books */
+.book-main {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
-  grid-template-rows: repeat(auto-fill, minmax(300px, 1fr)); 
+  grid-template-columns: repeat(auto-fill, minmax(40vh, 20vw));
+  grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
   margin-top: 20px;
 }
-#search{
+
+/* Styling for the search box */
+#search-box {
   width: 100vw;
   height: 5vh;
   padding: 0.1vh 2vw;
@@ -20,43 +25,51 @@
   margin-top: 7vh;
   font-size: 0.9rem;
   color: darkslategrey;
+  box-shadow: inset 0.1vh 0.2vw 0.4rem rgb(197, 157, 157);
+  border: none;
 }
-.book {
-  background-color:white;
+
+/* Styling for each book container */
+.allbook {
+  background-color: white;
   overflow: auto;
 }
 
-.book-thumbnail {
+/* Styling for book images */
+.book-img {
   width: 85%;
   height: 40vh;
   margin: 2px auto;
   display: block;
 }
 
-.book-title {
+/* Styling for book titles and links */
+.title, .title a {
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
   margin: 1vh 0.2vw;
   color: #000000;
 }
-a {
-  color: black;
-}
 
-.book-authors {
+/* Styling for book authors */
+.by {
   text-align: center;
   font-size: 0.7rem;
 }
-#success{
-    margin: 5vh 40vw;
-    color: #40af44; /* Success message color */
-    font-size: 1.2rem;
-    font-weight: bold;
+
+/* Styling for the registration status message */
+#Registration-done {
+  margin: 0vh 40vw;
+  color: #40af44; /* Success message color */
+  font-size: 1.2rem;
+  font-weight: bold;
 }
-#footer{
-  max-width:100vw ;
+
+/* Styling for the footer */
+#footer {
+  max-width: 100vw;
   max-height: 1vh;
   background-color: #f9fafc;
-
+  color: #000000;
 }
