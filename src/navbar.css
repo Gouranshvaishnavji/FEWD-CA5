@@ -1,6 +1,13 @@
-#navbar {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+#top {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -9,16 +16,12 @@
   padding: 1vh;
   box-shadow: 0 0.1vw 0.1rem rgba(0, 0, 0, 0.1);
 }
-
-.navbar-logo {
-  margin-right: 10px;
-}
 .onlysr-:hover {
   text-decoration: underline;
 }
 
 
-.navbar-links a {
+.register a {
   margin-left: 2vw;
   color: #685f5f;
   text-decoration: none;
@@ -26,7 +29,7 @@
   font-weight: 700;
 }
 
-.navbar img {
+#top img {
   height: 4vh;
   width: 7vh;
 }
