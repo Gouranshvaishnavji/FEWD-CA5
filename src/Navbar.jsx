@@ -14,17 +14,17 @@ export default function Navbar() {
   return (
     <>
       {/* Navbar container with an id of 'navbar' and a class of 'navbar' */}
-      <div id='navbar' className='navbar'>
+      <div id='top'>
         {/* Navbar logo section */}
         <div className='navbar-logo'>
           {/* Linking the logo to the home page */}
           <Link to='/'>
             {/* Image for the logo */}
-            <img src="https://kalvium.community/images/sidebar-3d-logo.svg" alt="" />
+            <img src="https://pluspng.com/img-png/google-play-logo-png-google-play-logo-angle-brand-yellow-media-play-angle-rectangle-920x512.png" alt="logo" />
           </Link>
         </div>
         {/* Navbar links section */}
-        <div className='navbar-links'>
+        <div className='register'>
           {/* NavLink for the registration page with conditional styling if the route matches */}
           <NavLink to="/registration" activeClassName='active-link'>
             {/* Text content for the NavLink */}
