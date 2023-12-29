@@ -100,7 +100,7 @@ function RegistrationUser() {
 
         {/* Form input fields for email */}
           <div className="forms">
-          <label className="form-label" htmlFor="email">
+          <label className="forms_Instr" htmlFor="email">
             Email
           </label>
           <input
