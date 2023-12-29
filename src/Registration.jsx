@@ -99,13 +99,13 @@ function RegistrationUser() {
         </div>
 
         {/* Form input fields for email */}
-        <div className="forms">
-          <label id="forms_Instr" htmlFor="email">
+          <div className="form-group">
+          <label className="form-label" htmlFor="email">
             Email
           </label>
           <input
-            type="email" id="email" name="email" className="input" placeholder="Email" value={formValues.email}
-            onChange={handlingChanges}
+            type="email" id="email" name="email" className="form-input" placeholder="E-mail" value={formValues.email}
+            onChange={handleChange}
           />
           <p className="error-message" htmlFor="email">
             {formErrors.email}
