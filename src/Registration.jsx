@@ -101,7 +101,7 @@ function RegistrationUser() {
         {/* Form input fields for email */}
           <div className="forms">
           <label className="forms_Instr" htmlFor="email">
-            Email
+            <p>E-mail</p>
           </label>
           <input
             type="email" id="email" name="email" className="input" placeholder="E-mail" value={formValues.email}
