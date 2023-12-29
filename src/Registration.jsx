@@ -104,7 +104,7 @@ function RegistrationUser() {
             Email
           </label>
           <input
-            type="text" id="email" name="email" className="input" placeholder="Email" value={formValues.email}
+            type="email" id="email" name="email" className="input" placeholder="Email" value={formValues.email}
             onChange={handlingChanges}
           />
           <p className="error-message" htmlFor="email">
